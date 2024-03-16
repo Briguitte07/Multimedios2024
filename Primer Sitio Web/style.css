@@ -1,0 +1,180 @@
+
+header {
+    
+    background: rgb(136,136,136);
+    background: linear-gradient(0deg, rgba(254,254,254,1)  0%, rgb(99, 99, 99) 100%);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    border-radius: 15px;
+  }
+
+  nav {
+    float:left;
+  }
+
+  nav ul{
+    list-style: none;
+    overflow: hidden; 
+  }
+
+  nav ul li {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 20px;
+  }
+
+
+  nav ul li a {
+    display: block; 
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav ul li:hover {
+    background: #6AC0C4;
+    opacity: 0.6;
+    transition: 800ms;
+    border-radius: 15px;
+  }
+
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 100%;
+  }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 400px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+   
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .titulo {
+    width: 100%;
+    height: 50px;
+    margin-top: -1%;
+    padding-top: 1px;
+    margin-left: 1%;
+    color:#fff;
+  }
+  .titulo:hover {
+    color: #6AC0C4;
+    transition: 800ms;
+  }
+
+  .content{
+    padding-top: 7%;
+
+  }
+
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 100%; 
+    
+  }
+  
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=datetime], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=tel], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  div.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+
+  #tour {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #tour td, #tour th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+tr{
+    background-color: #f2f2f2;
+}
+  tr:hover {background-color: #ddd!important;}
+  
+  #tour th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #7f8382;
+    color: white;
+  }
