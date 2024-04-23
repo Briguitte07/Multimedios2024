@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>División sin Dividir</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <header>
+                    <!-- place navbar here -->
+                    <div>
+                        <h2> División sin Dividir</h2>
+                    </div>
+                </header>
+            </div>
+
+            <div class="row">
+                <main>
+                    <!--Pantalla-->
+                    <div class="col-12 calculadora-body">
+                        <form>
+                            <div class="row">
+                              <label for="exampleInputNum1" class="form-label"></label>
+                              <input id="pantalla" type="text" class="form-control screen" id="exampleInputNum1" value="0" disabled readonly>
+                              <div  class="form-text"></div>
+                            </div>
+                        </form>
+                        <!--botones-->
+                        <div class="row">
+                            <div class="col-4">
+                                <button type="submit" class="btn-primary" onclick="setNumber('7')">7</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="submit" class="btn-primary" onclick="setNumber('8')">8</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="submit" class="btn-primary" onclick="setNumber('9')">9</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <button type="submit" class="btn-primary" onclick="setNumber('4')">4</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="submit" class="btn-primary" onclick="setNumber('5')">5</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="submit" class="btn-primary" onclick="setNumber('6')">6</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <button type="submit" class="btn-primary" onclick="setNumber('1')">1</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="submit" class="btn-primary" onclick="setNumber('2')">2</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="submit" class="btn-primary" onclick="setNumber('3')">3</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <button type="submit" class="btn btn-primary" onclick="div()">÷</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="submit" class="btn-primary" onclick="setNumber('0')">0</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="submit" class="btn btn-primary" onclick="clearScreen()">AC</button>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary" onclick="equals()">=</button>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            
+            <div class="row">
+                <footer>
+                    <!-- place footer here -->
+                    <p style="color: aliceblue;">Solo al profe Mario se le ocurren estas cosas</p>
+                </footer>
+            </div>
+        </div>
+       
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="js/script.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
