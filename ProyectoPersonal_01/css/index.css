@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(51, 50, 50);
+  
+}
+main{
+   background-color: rgb(51, 50, 50);
+}
+.container {
+    width: 100%;
+    max-width: 2000px; /* Ajusta el ancho máximo del contenedor según las necesidades */
+    height: 100%;
+    margin: auto;
+    margin-top:5%;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+video {
+    width: 100%;
+    height: auto;
+}

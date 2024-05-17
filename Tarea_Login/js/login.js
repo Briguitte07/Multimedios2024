@@ -49,6 +49,7 @@ const token = localStorage.getItem('token');
     })
 
 
+//Eventos
 //Inyección de código 
 function escapeHTML(text) {
     var map = {
@@ -74,18 +75,12 @@ function escapeHTML(text) {
     verificarTokenEnLocalStorage(evento);
   }
   
-  //
   function alertaLogin(code){
     if(code == 404){
        alert("Usuario o contraseña incorrecta");
     }
   }
-  
 
-//Verificar si los datos enviados son correctos
-//Si lo son, la API devolvera un token
-//Guardar el token en el LocalStorage
-//la protección contra ataques de inyección de código.
 function verificarTokenEnLocalStorage(event) {
     const token = localStorage.getItem("token");
     event.preventDefault();

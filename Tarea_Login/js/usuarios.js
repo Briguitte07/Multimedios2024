@@ -213,6 +213,7 @@ function mostrarDatos(datos){
 function loadspinner(){
     document.getElementById("spinnerload").innerHTML = spinner;
 }
+
 //onclick="editar('${iterator.id}', '${iterator.name}', '${iterator.password}', '${iterator.email}')"
 //function editar(id, name, password, email) {
 function editar(objeto) {
