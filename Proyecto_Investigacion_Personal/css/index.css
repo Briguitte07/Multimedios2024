@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(191, 199, 207);
+}
+main{
+    background-color: rgb(191, 199, 207);
+}
+.container {
+    width: 70%;
+    max-width: 2000px; /* Ajusta el ancho máximo del contenedor según las necesidades */
+    height: 100%;
+    margin: auto;
+    margin-top:2%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(3, 173, 216);
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+}
+
