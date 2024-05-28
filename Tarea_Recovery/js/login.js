@@ -1,20 +1,18 @@
 ///Sección del Login
-
 //Propiedades
 let autenticar = "AutenticarUsuario.php" 
 let url = "https://paginas-web-cr.com/Api/apis/";
 
 const token = localStorage.getItem('token');
 
-//Eventos
+//Eventos Inicio-----------------------------------------------------------------------------------------------------//
     formulario.addEventListener('submit', 
     function(evento) { 
         let email = document.getElementById("email").value;
         let password = document.getElementById("password").value;
         evento.preventDefault();//evita que la pagina se recargue
-        // Crea un objeto FormData a partir del formulario
+        
         let datos = new FormData(formulario);
-        // Crea un objeto con los datos del formulario
         let datosEnviar = {
             email: datos.get('email'),
             password: datos.get('password')
@@ -47,9 +45,7 @@ const token = localStorage.getItem('token');
         .catch(console.log)
         
     })
-
-
-//Eventos
+//-----------------------------------------------------------------------------------------------------//
 //Inyección de código 
 function escapeHTML(text) {
     var map = {
@@ -62,24 +58,27 @@ function escapeHTML(text) {
     return text.replace(/[&<>"']/g, function(m) { return map[m]; });
   }
   
-  
+//-----------------------------------------------------------------------------------------------------// 
   function agregar(){
       let email = document.getElementById('email').value;
       email= escapeHTML(email);
       console.log(email);
   }
+//-----------------------------------------------------------------------------------------------------//
 
   function guardarTokenEnLocalStorage(respuesta,evento) {
     const token = btoa(JSON.stringify(respuesta));
     localStorage.setItem("token", token);
     verificarTokenEnLocalStorage(evento);
   }
-  
+//-----------------------------------------------------------------------------------------------------//
+
   function alertaLogin(code){
     if(code == 404){
        alert("Usuario o contraseña incorrecta");
     }
   }
+//-----------------------------------------------------------------------------------------------------//
 
 function verificarTokenEnLocalStorage(event) {
     const token = localStorage.getItem("token");
@@ -90,4 +89,3 @@ function verificarTokenEnLocalStorage(event) {
     } 
   }
   
-  // Llamada a la función para verificar el token al cargar la página

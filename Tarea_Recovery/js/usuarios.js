@@ -13,18 +13,13 @@ let listar = "ListaUsuarios.php";
 let insertar = "InsertarUsuarios.php";
 let actualizar = "ActualizarUsuarios.php";
 
-// ocupo json
-
 let spinner = `
 <button class="btn btn-success" type="button" disabled>
     <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
     <span role="status">Loading...</span>
 </button>`;
 
-//Propiedades Fin
-
-
-//Eventos Inicio
+//Eventos Inicio-----------------------------------------------------------------------------------------------------//
 if ( nombrePagina == nombreModuloCrear ){
     formulario.addEventListener('submit', 
     function(evento) {
@@ -47,7 +42,6 @@ if ( nombrePagina == nombreModuloCrear ){
         )
         .then(respuesta=>respuesta.json())
         .then( (datosrepuesta) => {
-            //console.log(datosrepuesta)
             mensajeInsertar(datosrepuesta)
         })
         .catch(console.log)
@@ -55,7 +49,7 @@ if ( nombrePagina == nombreModuloCrear ){
     })
 }
 
-
+//-----------------------------------------------------------------------------------------------------//
 formularioEditar.addEventListener('submit', 
 function(evento) {
     evento.preventDefault();//evita que la pagina se recargue
@@ -85,10 +79,7 @@ function(evento) {
  
 })
 
-//Eventos Fin
-
-
-//Metodos Inicio
+//Metodos Inicio---------------------------------------------------------------------------------//
 function mensajeInsertar(datos){
     if(datos.code == 200){        
         mensajesSistema.innerHTML = `<div
@@ -120,6 +111,7 @@ function mensajeInsertar(datos){
     }
 }
 
+//-----------------------------------------------------------------------------------------------------//
 function mensajeActualizar(datos){
     if(datos.code == 200){        
         mensajesSistema.innerHTML = `<div
@@ -153,7 +145,7 @@ function mensajeActualizar(datos){
     }
 }
 
-
+//-----------------------------------------------------------------------------------------------------//
 function cargarDatos(){
     datosTabla.innerHTML = "";
     loadspinner();
@@ -167,13 +159,11 @@ function cargarDatos(){
     })
     .catch(console.log)
 }
-
+//-----------------------------------------------------------------------------------------------------//
 function mostrarDatos(datos){
-    //console.log(datos);
     
     if(datos.code == 200){
         for (const iterator of datos.data) {  
-        //onclick="editar('${iterator.id}', '${iterator.name}', '${iterator.password}', '${iterator.email}')"
             datosTabla.innerHTML += `
                 <tr class="">
                     <td>
@@ -214,8 +204,7 @@ function loadspinner(){
     document.getElementById("spinnerload").innerHTML = spinner;
 }
 
-//onclick="editar('${iterator.id}', '${iterator.name}', '${iterator.password}', '${iterator.email}')"
-//function editar(id, name, password, email) {
+//-----------------------------------------------------------------------------------------------------//
 function editar(objeto) {
     let modalEditar = new bootstrap.Modal(document.getElementById("modalEditar"));
     modalEditar.show();
@@ -244,8 +233,7 @@ function modalEliminarConfirmacion(){
     //document.getElementById("idEliminarModal").value
 }
 
-//Metodos Fin
-
+//-----------------------------------------------------------------------------------------------------//
 //Seccion de ejecucion de funciones
 if (nombrePagina == nombreModuloListar ){
     cargarDatos();

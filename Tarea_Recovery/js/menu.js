@@ -7,7 +7,7 @@ let menu = `
                 >
                 <li class="nav-item">
                     <a
-                        href="index.html"
+                        href="Index.html"
                         class="nav-link active"
                         data-bs-toggle="tab"
                         aria-current="page"
@@ -34,11 +34,6 @@ let menu = `
                 <li class="nav-item" role="presentation">
                     <a href="#tab5Id" class="nav-link" data-bs-toggle="tab"
                         >Another link</a
-                    >
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a href="#" class="nav-link disabled" data-bs-toggle="tab"
-                        >Disabled</a
                     >
                 </li>
                 <li class="nav-item" role="cerrarSesion">

@@ -1,5 +1,5 @@
 //Propiedades 
-
+//Evento------------------------------------------------------------------------------------------//
 $(document).ready(function() {
     $('#formulario').on('submit', function(event) {
         event.preventDefault();
@@ -51,6 +51,7 @@ $(document).ready(function() {
     });
 });
 
+//Funcion----------------------------------------------------------------------------//
 function volverPaginaAnterior() {
     const paginaAnterior = document.referrer;
     if (paginaAnterior) {

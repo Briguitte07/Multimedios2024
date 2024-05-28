@@ -1,3 +1,4 @@
+//Verificacion------------------------------------------------------------//
 function verificarTokenEnLocalStorage(event) {
     const token = localStorage.getItem("token");
     event.preventDefault();
@@ -8,6 +9,7 @@ function verificarTokenEnLocalStorage(event) {
     } 
   }
   
+  //-----------------------------------------------------------------------------------------------------//
   // Llamada a la función para verificar el token al cargar la página
   document.addEventListener("DOMContentLoaded", verificarTokenEnLocalStorage);
 
